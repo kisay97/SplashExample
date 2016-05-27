@@ -9,6 +9,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Intent intent = new Intent(this, SplashActivity.class);
+        startActivity(intent);
+
+        setTheme(R.style.AppTheme);
         setContentView(R.layout.activity_main);
     }
 }
